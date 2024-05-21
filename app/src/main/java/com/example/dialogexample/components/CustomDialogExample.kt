@@ -26,7 +26,7 @@ import androidx.compose.ui.window.Dialog
 @Composable
 fun CustomDialogExample(
     onDismissRequest: () -> Unit,
-    onConfirmation: (select: String) -> Unit,
+    onConfirmation: (String) -> Unit,
 ) {
     val languages = listOf("Kotlin", "Java", "Javascript", "Rust")
     val (selectedOption, onOptionSelected) = remember { mutableStateOf("") }
